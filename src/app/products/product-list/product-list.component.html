@@ -1,0 +1,6 @@
+@for(product of products(); track product.id) {
+  <a 
+    [routerLink]="[product.id]">
+    {{product.id}}
+  </a>
+}
