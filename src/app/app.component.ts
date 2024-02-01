@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
+import { ENVIRONNEMENT } from '../assets/env/environnement';
 
 @Component({
   selector: 'app-root',
@@ -12,4 +13,5 @@ import { HeaderComponent } from './header/header.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  env = ENVIRONNEMENT;
 }
