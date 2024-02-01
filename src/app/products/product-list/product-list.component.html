@@ -1,6 +1,22 @@
-@for(product of products(); track product.id) {
-  <a 
-    [routerLink]="[product.id]">
-    {{product.id}}
-  </a>
-}
+<div class="flex flex-row flex-wrap">
+  @for(product of products(); track product.id) {
+    <div class="pr-8 py-4">
+      <div class="card w-96 bg-base-100 shadow-xl">
+        <figure class="h-64">
+          <img [src]='product.medias[0]?.url'/>
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            {{product.name}}
+            <!-- <a [routerLink]="[product.id]" class="badge badge-neutral">Details</a> -->
+          </h2>
+          <p>{{product.content}}</p>
+          <div class="card-actions justify-end">
+            <!-- <div class="badge badge-outline">Categorie</div> -->
+            <a [routerLink]="[product.id]" class="badge badge-neutral">Photos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  }
+</div>

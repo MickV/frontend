@@ -11,6 +11,6 @@ import { RouterModule } from '@angular/router';
   styleUrl: './product-list.component.css'
 })
 export class ProductListComponent {
-  productService = inject(ProductsService);
+  private productService = inject(ProductsService);
   products = this.productService.products;
 }

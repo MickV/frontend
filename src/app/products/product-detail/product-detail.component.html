@@ -1,1 +1,7 @@
-product : {{product() | json}}
+<div class="flex">
+  @for(media of product()?.medias; track media.id) {
+    <div class="p-4">
+      <img [src]="media.url" class="w-96"/>
+    </div>
+  }
+</div>

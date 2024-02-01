@@ -15,5 +15,5 @@ export class ProductDetailComponent {
 
   productDetailService = inject(ProductsService);
   product = computed(() => this.productDetailService.products().find(p => p.id === Number(this.id())));
-  ;
+  
 }
