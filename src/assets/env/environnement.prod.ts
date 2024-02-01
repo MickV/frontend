@@ -1,9 +1,9 @@
 export const ENVIRONNEMENT = {
   production: true,
   backend: {
-    host:'http://prod',
+    host:'unknown',
     port: 1337,
-    url: 'http://prod:1337'
+    url: 'https://magical-feast-17172e0dd9.strapiapp.com'
   }
  };
  

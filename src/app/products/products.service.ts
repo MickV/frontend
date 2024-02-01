@@ -21,7 +21,8 @@ export class ProductsService {
       medias: p.attributes?.medias?.data?.map((media: any) => ({
         id: media.id,
         name: media.attributes?.name,
-        url: `${ENVIRONNEMENT.backend.url}` + media.attributes?.url
+        // url: `${ENVIRONNEMENT.backend.url}` + media.attributes?.url
+        url: media.attributes?.url
       }))
     } as Product))));
   }
